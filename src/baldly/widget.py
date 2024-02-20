@@ -1,2 +1,2 @@
 def foo(x: int) -> str:
-    return str(x)[::-1]
+    return str(x)[::-1]          # aaaa
