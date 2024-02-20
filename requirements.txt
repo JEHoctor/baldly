@@ -1,0 +1,10 @@
+polars
+numpy
+scikit-learn
+typer
+pydantic
+
+ruff
+pre-commit
+pytest
+pyright
