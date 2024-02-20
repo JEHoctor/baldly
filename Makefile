@@ -1,4 +1,4 @@
-.PHONY: init clean update format format-check lint lint-fix test type-check quality
+.PHONY: init clean update format format-diff lint lint-fix test type-check quality
 
 init:
 	python3.12 -m venv venv
@@ -13,8 +13,8 @@ update: clean init
 format:
 	(source venv/bin/activate && ruff format src/ tests/)
 
-format-check:
-	(source venv/bin/activate && ruff format --check src/ tests/)
+format-diff:
+	(source venv/bin/activate && ruff format --diff src/ tests/)
 
 lint:
 	(source venv/bin/activate && ruff src/ tests/)
